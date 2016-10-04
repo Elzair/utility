@@ -8,3 +8,5 @@ target_include_directories(boost_utility BEFORE INTERFACE ${CMAKE_CURRENT_SOURCE
 
 install(TARGETS boost_utility DESTINATION lib)
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/boost DESTINATION include)
+
+add_library(boost::utility ALIAS boost_utility)
